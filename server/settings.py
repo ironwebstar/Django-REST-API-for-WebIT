@@ -90,7 +90,7 @@ WSGI_APPLICATION = 'server.wsgi.application'
 
 # SECRET_KEY = config('SECRET_KEY') 
 # DEBUG = config('DEBUG', default=False, cast=bool)
-DATABASE_URL = 'postgres://hjdqjhzuivrgwy:6926aba7ffce9032f4ef1fb973dfc1b897581e47c0429a2b6912519ca40219b5@ec2-107-21-224-76.compute-1.amazonaws.com:5432/dnboggetpoekf'
+DATABASE_URL = 'postgres://fbhgiazbyaqeux:b1ae97301596b47492ac9a2b56c0f5e3b1c219729b7a95251cf504837438e560@ec2-54-225-227-125.compute-1.amazonaws.com:5432/dc8lba13v87hh1'
 DATABASES = {
     'default': dj_database_url.config(default=DATABASE_URL)
 }
