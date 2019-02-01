@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/1.11/ref/settings/
 """
 
 import os
-
+import dj_database_url
 import django_heroku 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -90,11 +90,9 @@ WSGI_APPLICATION = 'server.wsgi.application'
 
 # SECRET_KEY = config('SECRET_KEY') 
 # DEBUG = config('DEBUG', default=False, cast=bool)
-
-DATABASES = { 
-    'default': dj_database_url.config( 
-        default='postgres://hjdqjhzuivrgwy:6926aba7ffce9032f4ef1fb973dfc1b897581e47c0429a2b6912519ca40219b5@ec2-107-21-224-76.compute-1.amazonaws.com:5432/dnboggetpoekf'
-    ) 
+DATABASE_URL = 'postgres://hjdqjhzuivrgwy:6926aba7ffce9032f4ef1fb973dfc1b897581e47c0429a2b6912519ca40219b5@ec2-107-21-224-76.compute-1.amazonaws.com:5432/dnboggetpoekf'
+DATABASES = {
+    'default': dj_database_url.config(default=DATABASE_URL)
 }
 # Password validation
 # https://docs.djangoproject.com/en/1.11/ref/settings/#auth-password-validators
