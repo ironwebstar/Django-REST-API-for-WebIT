@@ -93,7 +93,7 @@ WSGI_APPLICATION = 'server.wsgi.application'
 
 DATABASES = { 
     'default': dj_database_url.config( 
-        default=config('postgres://hjdqjhzuivrgwy:6926aba7ffce9032f4ef1fb973dfc1b897581e47c0429a2b6912519ca40219b5@ec2-107-21-224-76.compute-1.amazonaws.com:5432/dnboggetpoekf') 
+        default='postgres://hjdqjhzuivrgwy:6926aba7ffce9032f4ef1fb973dfc1b897581e47c0429a2b6912519ca40219b5@ec2-107-21-224-76.compute-1.amazonaws.com:5432/dnboggetpoekf'
     ) 
 }
 # Password validation
